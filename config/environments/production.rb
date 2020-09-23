@@ -114,6 +114,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = {host: "https://mailappjimmy.herokuapp.com"}
   config.action_mailer.raise_delivery_errors = true
+  config.require_master_key = true
 
 
 
@@ -123,6 +124,8 @@ Rails.application.configure do
     :user_name            => "minhws220500@gmail.com",
     :password             => "Minhws2205",
     :authentication       => "plain",
+    :domain               => 'heroku.com',
+
     :enable_starttls_auto => true
   }
 
